@@ -20,7 +20,7 @@ Foi continuado o desenvolvimento da aplicação que armazena repositórios do po
 
 ## :rocket: Tecnologias
 
-<h2 align="left">
+<h2 align="center">
   Sobre Projeto 🤓
 </h2>
 Neste desafio foi solicitada a criação de uma aplicação back-end NodeJS e typescript para registrar entradas e saídas aplicação financeiras. 
