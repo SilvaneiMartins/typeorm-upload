@@ -1,28 +1,34 @@
 import { getCustomRepository, getRepository } from 'typeorm';
 import AppError from '../errors/AppError';
-
-import TransactionRepository from '../repositories/TransactionsRepository';
 import Transaction from '../models/Transaction';
 import Category from '../models/Category';
+import TransactionRepository from '../repositories/TransactionsRepository';
 
-interface Request {
+interface RequestDTO {
   title: string;
-  type: 'income' | 'outcome';
   value: number;
+  type: 'income' | 'outcome';
   category: string;
 }
+
 class CreateTransactionService {
   public async execute({
     title,
     value,
     type,
     category,
-  }: Request): Promise<Transaction> {
+  }: RequestDTO): Promise<Transaction> {
     const transactionRepository = getCustomRepository(TransactionRepository);
     const categoryRepository = getRepository(Category);
-    const { total } = await transactionRepository.getBalance();
+
+    const transactions = await transactionRepository.find();
+
+    const { total } = await transactionRepository.getBalance(transactions);
+
     if (type === 'outcome' && total < value) {
-      throw new AppError('Você não tem saldo suficiente!');
+      throw new AppError('Insufficient funds');
+    } else if (type !== 'income' && type !== 'outcome') {
+      throw new AppError('declined transaction, invalid type');
     }
 
     let transactionCategory = await categoryRepository.findOne({
@@ -35,6 +41,7 @@ class CreateTransactionService {
       transactionCategory = categoryRepository.create({
         title: category,
       });
+
       await categoryRepository.save(transactionCategory);
     }
 
@@ -44,7 +51,9 @@ class CreateTransactionService {
       type,
       category: transactionCategory,
     });
+
     await transactionRepository.save(transaction);
+
     return transaction;
   }
 }

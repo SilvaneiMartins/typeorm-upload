@@ -1,20 +1,70 @@
-# typeorm-upload
-Banco de dados e upload de arquivos no NodeJS
+<img alt="GoStack" src="src/images/desafio.png" />
 
-No desafio 06 foi solicitada a criação de uma aplicação back-end NodeJS e typescript para registrar entradas e saídas aplicação financeiras.
-Trabalhamos também endpoint para a importação do arquivo com lançamento das transações.
+<h3 align="center">
+  Desafio 06: Typeorm Upload
+</h3>
 
-Tecnologias utilizadas no desagio. <br>
-Node.js <br>
-TypeScript <br>
-Jest <br>
-Postgres <br>
+<p align="center">
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-como-usar">Como Usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#page_with_curl-contato">Contato</a>
+</p>
 
-Também foram utilizadas tecnologias para padronização de código, são elas. <br>
-prettier <br>
-eslint <br>
-editorconfig <br>
+<h4 align="left">
+  Banco de dados e Upload de Arquivos com NodeJS
+</h4>
 
-Executando a aplicação. <br>
-yarn <br>
-yarn dev:server <br>
+## :rocket: Sobre o desafio
+
+Foi continuado o desenvolvimento da aplicação que armazena repositórios do portfólio dos últimos desafios de [Node.js](https://github.com/lucas-hgs/desafio-conceitos-nodejs) e [ReactJS](https://github.com/lucas-hgs/desafio-conceitos-reactjs).
+
+## :rocket: Tecnologias
+
+<h2 align="left">
+  Sobre Projeto 🤓
+</h2>
+Neste desafio foi solicitada a criação de uma aplicação back-end NodeJS e typescript para registrar entradas e saídas aplicação financeiras. 
+Trabalhamos também endpoint para a importação do arquivo com lançamento das transações. 
+
+-> Eu utizei as tecnologias logo abaixo:
+
+-  [NodeJS](https://nodejs.org/en/)
+-  [Typescript](https://www.typescriptlang.org/)
+-  [Jest](https://github.com/facebook/jest)
+-  [Postgres](https://www.postgresql.org/)
+
+-> Foi Usado no Projeto de estudos as tecnologias:
+
+-  [Prettier](https://github.com/prettier/prettier)
+-  [Eslint](https://github.com/eslint/eslint)
+-  [Editorconfig](https://github.com/editorconfig)
+
+## :information_source: Como usar
+
+Para clonar e executar esta aplicação, você precisa do [Github](https://git-scm.com) e [Yarn](https://yarnpkg.com/) ou maior instalados. Comandos:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/SilvaneiMartins/typeorm-upload
+
+# Go into the repository
+$ cd typeorm-upload
+
+# Install dependencies
+$ yarn
+
+# Realizar os teste
+$ yarn dev:server
+```
+## :page_with_curl: Contato
+
+Desenvolvedor: Silvanei Martins<br>
+Linkedin: [Entrar em contato!](https://www.linkedin.com/in/silvanei-martins-a5412436/)<br>
+Contato: WhastApp Comercial: +55 (69) 9.9970-8265 <br>
+Email: silvaneimartins_rcc@hotmail.com / silvaneimartins34@gmail.com<br>
+
+Empresa: <br>
+Sam Security Develop.<br>
+
+Observação: Gostaria de pedir para quem usar, clonar ou realizar qualquer outro tipo de experimento com o código,
+por favor, mantenha a assinatura do autor no código.
