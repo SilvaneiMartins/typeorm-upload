@@ -14,11 +14,8 @@
   Banco de dados e Upload de Arquivos com NodeJS
 </h4>
 
-## :rocket: Sobre o desafio
+## :rocket: Sobre o desafio 🤓
 
-<h2 align="center">
-  Sobre Projeto 🤓
-</h2>
 Neste desafio foi solicitada a criação de uma aplicação back-end NodeJS e typescript para registrar entradas e saídas aplicação financeiras.
 Foi continuado o desenvolvimento da aplicação que armazena repositórios do portfólio dos últimos desafios de NodeJs
 
