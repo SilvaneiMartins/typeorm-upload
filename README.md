@@ -16,25 +16,24 @@
 
 ## :rocket: Sobre o desafio
 
-Foi continuado o desenvolvimento da aplicação que armazena repositórios do portfólio dos últimos desafios de [Node.js](https://github.com/lucas-hgs/desafio-conceitos-nodejs) e [ReactJS](https://github.com/lucas-hgs/desafio-conceitos-reactjs).
-
-## :rocket: Tecnologias
-
 <h2 align="center">
   Sobre Projeto 🤓
 </h2>
-Neste desafio foi solicitada a criação de uma aplicação back-end NodeJS e typescript para registrar entradas e saídas aplicação financeiras. 
+Neste desafio foi solicitada a criação de uma aplicação back-end NodeJS e typescript para registrar entradas e saídas aplicação financeiras.
+Foi continuado o desenvolvimento da aplicação que armazena repositórios do portfólio dos últimos desafios de NodeJs
+
+## :rocket: Tecnologias
+
+Nesse desafio, foi proposto criar uma aplicação para treinar o que foi ensinado no segundo módulo em Fundamentos de Nodejs com typescript. 
 Trabalhamos também endpoint para a importação do arquivo com lançamento das transações. 
 
--> Eu utizei as tecnologias logo abaixo:
-
+-> Usamos as tecnologias logo abaixo:
 -  [NodeJS](https://nodejs.org/en/)
 -  [Typescript](https://www.typescriptlang.org/)
 -  [Jest](https://github.com/facebook/jest)
 -  [Postgres](https://www.postgresql.org/)
 
--> Foi Usado no Projeto de estudos as tecnologias:
-
+-> Usamos também no Projeto de estudos as tecnologias:
 -  [Prettier](https://github.com/prettier/prettier)
 -  [Eslint](https://github.com/eslint/eslint)
 -  [Editorconfig](https://github.com/editorconfig)
